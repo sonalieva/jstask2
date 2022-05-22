@@ -1,23 +1,23 @@
-let btnBig = document.getElementById('sizeBig');
-let btnSml = document.getElementById('sizeSmall');
-let colorBtn =document.getElementById('colorBtn')
+let Bigbtn = document.getElementById('Bigsize');
+let Smallbtn = document.getElementById('Smallsize');
+let ColorBtn =document.getElementById('colorBtn')
 var powBig = 5;
 
-btnBig.onclick = function(){
+Bigbtn.onclick = function(){
     let dynText = document.getElementsByTagName("p");
     for(let i=0;i<dynText.length;i++){
         dynText[i].style.fontSize = (powBig*4)+"px";}
         powBig++;
 }
-var powSml =80;
-btnSml.onclick = function(){
+var powSml =100;
+Smallbtn.onclick = function(){
     let dynText = document.getElementsByTagName("p");
     for(let i=0;i<dynText.length;i++){
         dynText[i].style.fontSize = (powSml/4)+"px";}
         powSml--;
 }
 
-colorBtn.onclick=function(){
+ColorBtn.onclick=function(){
     let colorvalue = document.getElementById('input').value;
     let dynText = document.getElementsByTagName("p");
     for(let i=0;i<dynText.length;i++){
